@@ -7,7 +7,7 @@ API_KEY=""
 COVER="/tmp/cover.jpg"
 
 # where to store downloaded covers (unconverted)
-ART_PATH="/home/jo/.covers/"
+ART_PATH="$HOME/.covers/"
 
 # there should be no need to change this
 METHOD="album.getinfo"
