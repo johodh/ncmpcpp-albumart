@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# last.fm API-key
+API_KEY=""
+
+# store current albumart after converted to 400x400, this file will be overwritten on each conversion
+COVER="/tmp/cover.jpg"
+
+# where to store downloaded covers (unconverted)
+ART_PATH="/home/jo/.covers/"
+
+# there should be no need to change this
+METHOD="album.getinfo"
+ARTIST=$(mpc --format %artist% current | sed -e "s/ /+/g")
+ALBUM=$(mpc --format %album% current | sed -e "s/ /+/g")
